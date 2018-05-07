@@ -1,0 +1,95 @@
+<!-- Image and text -->
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/logo-almundo.svg" width="50" height="50" class="d-inline-block align-top almundoImg" alt="">
+
+  </a>
+</nav>
+
+<div class="container">
+  <div class="card w-25 p-3 float-left">
+    <div class="card-body">
+      <h4>Filtros</h4>
+      <hr>
+      <h5><img src="/assets/search.svg" alt="lupa.svg" class="lupa">Nombre del hotel</h5>
+      <div class="input-group mb-3">
+        <input type="search" class="form-control" placeholder="Buscar hotel" aria-label="Username" aria-describedby="basic-addon1" #search>
+        <button type="button" class="btn btn-primary">Buscar</button>
+      </div>
+      <hr>
+
+      <h5><img src="/assets/star.svg" alt="estrella.svg" class="estrella">Estrellas</h5>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+    Todas las Estrellas
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+    <img src="/assets/star.svg" alt="estrella.svg" class="estrella">
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="card w-75 float-right" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let hotel of hotels">
+
+        <div class="container">
+          <div class="row">
+            <img src="/assets/hotels/{{hotel.image}}" alt="hotel_img" class="imgHotel col-6 col-md-4">
+            <div id="estrellas" class="col-6 col-md-4" style="text-align: center;">
+              <h6>{{hotel.name}}</h6>
+              <p>{{hotel.stars}} Estrellas</p>
+              <p>{{hotel.amenities}}</p>
+            </div>
+            <div id="price" class="col-6 col-md-4" style="text-align: center;">
+              <p>ARS {{hotel.price}}</p>
+              <button class="btn btn-primary">Ver más</button>
+            </div>
+          </div>
+        </div>
+
+
+    </li>
+    </ul>
+  </div>
+
+</div>

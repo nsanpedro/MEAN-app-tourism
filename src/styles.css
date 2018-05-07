@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #f1f1f1;
+}
+
+.almundoImg {
+  width: 200px;
+}
+
+.bg-dark {
+  background-color: #030376 !important
+}
+
+.card {
+  margin-top: 2em;
+  padding-bottom: 2px;
+}
+
+.btn {
+  margin-left: 6px;
+}
+
+.estrella {
+  width: 10%;
+}
+
+.lupa {
+  width: 10%;
+}
+
+.imgHotel {
+  width: 30%;
+}

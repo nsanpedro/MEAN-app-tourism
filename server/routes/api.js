@@ -6,7 +6,7 @@ const ObjectID = require('mongodb').ObjectID;
 
 //Connect
 const connection = (closure) => {
-  return MongoClient.connect('mongodb://nicosp:yoryis2105@ds149309.mlab.com:49309/hoteles', (err, db) => {
+  return MongoClient.connect('mongodb://localhost:3000/hoteles', (err, db) => {
     if(err) return console.info(err);
     closure(db);
   });
